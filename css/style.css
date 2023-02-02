@@ -67,6 +67,9 @@ body {
 /* ---------------------------HEADER----------------------- */
 .header {
     border-bottom: 1px solid var(--accent);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 1px 6px rgba(46, 47, 66, 0.08);
     
 }
 
@@ -158,9 +161,12 @@ body {
 /* ----------------HERO SECTION--------------- */
 .hero-section {
     color: #FFF;
-    background-color: var(--dark);
+    /* background-color: var(--dark); */
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero-section .container {
@@ -216,14 +222,24 @@ body {
 .strategy-item {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
     padding: 0px;
     gap: 8px;
 }
 
 .strategy-item .text {
     line-height: 1.5;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light);
+    border-radius: 4px;
+}
+.strategy-icon {
+    margin: 24px 100px; 
+    
 }
 /*--------------------DOING----------------------- */
 .doing {
@@ -264,6 +280,7 @@ body {
     padding: 0;
     margin: 0;
 
+   
 }
 
 .section-team .header-two {
@@ -286,6 +303,64 @@ body {
     padding: 32px 0px ;
     gap: 8px;
 }
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 24px;
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-brand);
+
+}
+
+.social-list-link:focus,
+.social-list-link:hover {
+    background-color: var(--pressed-state);
+}
+
+/* ---------------------Customers--------------------- */
+.customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
+.container .header-two {
+    margin-bottom: 72px;
+}
+
+.customers-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 24px;
+}
+
+.customers-list-item {
+    width: 168px;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #8e8f99;
+    border: 1px solid var(--subtle-text);
+    border-radius: 4px;
+}
+
+.customers-list-item:hover,
+ .customers-list-item:focus {
+    fill: var(--pressed-state);
+    border: 1px solid var(--pressed-state);
+}
 /* ----------------------FOOTER----------------------  */
 .footer {
     color: var(--accent);
@@ -295,6 +370,10 @@ body {
 }
 
 .footer .container {
+    display: flex;
+    gap: 120px;
+}
+.footer .container-text {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -318,6 +397,37 @@ body {
     line-height: 1.5;
 }
 
+.footer-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+}
+
+.footer-social-text {
+    margin: 0;
+    margin-bottom: 16px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-list-item:hover,
+.footer-list-item:focus {
+    background-color: var(--success);
+}
 /* ----------------PORTFOLIO PAGE------------------ */
 .portfolio {
     padding-top: 96px;
@@ -369,6 +479,14 @@ body {
 }
 
 .card-items {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.card-items:hover,
+.card-items:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portcards-text {
@@ -379,6 +497,7 @@ body {
     border: 1px solid var(--accent);
     border-top: none;
 }
+
 
 
 
